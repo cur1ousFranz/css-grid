@@ -1,46 +1,104 @@
-body{
+* 
+    Saving Primary and Secondary fonts
 
+    Primary font: font-family: 'Lato', sans-serif;
+    Secondary font: font-family: 'Roboto Condensed', sans-serif;
+    
+*/
+
+
+body {
     margin: 0;
 }
 
-.container {
-    
+.main-container {
+
     width: 100vw;
     height: 100vh;
+    min-width: 320px;
 
     display: grid;
-   
+    box-sizing: border-box;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50px 1fr 1fr 100px;
 
     grid-gap: 10px;
     padding: 10px;
-    box-sizing: border-box;
 }
 
-.container div {
-    padding: 10px;
+/* Asigning span of columns and rows in sub containers */
+.main-container div {
     border: 1px solid black;
-    border-radius: 10px;
+    padding: 10px;
+    display: flex;
 }
 
-.navigation-bar {
+.navigation {
+
     grid-column: 1 / span 4;
+    font-family: 'Lato', sans-serif;
     
 }
 
-.recommendation { 
-    grid-row: 2 / span 3;
-}
-
 .content {
-
     grid-column: 1 / span 3;
     grid-row: 2 / span 3;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.recommendation {
+    grid-row: 2 / span 3;
+    font-family: 'Roboto Condensed', sans-serif;
+    
 }
 
 .footer {
     grid-column: 1 / span 4;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* implementing in navigation bar */
+
+.home-nav {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    
+}
+
+.home-nav li {
+
+    margin-left: 20px;
+    list-style: none;
+}
+
+#signup-button {
+    margin-left: 50px;
+}
+
+@media (max-width: 420px) {
+
+   .recommendation {
+       display: none !important;
+   }
+   
+   #signup-button {
+       margin-left: 10px;
+   }
+   
+   .home-nav {
+       justify-content: center;
+   }
+
+   .home-nav li {
+       margin-left: 10px;
+       font-size: smaller;
+   }
+
+   .content {
+       grid-column: 1 / span 4;
+   }
+    
 }
 
 
