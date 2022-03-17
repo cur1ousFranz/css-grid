@@ -1,4 +1,4 @@
-* 
+/* 
     Saving Primary and Secondary fonts
 
     Primary font: font-family: 'Lato', sans-serif;
@@ -13,7 +13,6 @@ body {
 
 .main-container {
 
-    width: 100vw;
     height: 100vh;
     min-width: 320px;
 
@@ -81,24 +80,15 @@ body {
    .recommendation {
        display: none !important;
    }
-   
-   #signup-button {
-       margin-left: 10px;
-   }
-   
-   .home-nav {
-       justify-content: center;
-   }
-
+ 
    .home-nav li {
-       margin-left: 10px;
-       font-size: smaller;
+      display: none !important;
    }
 
    .content {
        grid-column: 1 / span 4;
+       flex-wrap: wrap;
    }
-    
+  
 }
-
 
