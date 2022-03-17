@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        form {
+            border: 1px solid black;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            margin-top: 100px;
+            display: grid;
+            border-radius: 20px;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 25% 55% 25%;
+        }
+
+        .title { 
+            margin: auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 25px;
+        }
+
+        .text-fields {
+            display: grid;
+            grid-row-gap: 10px;
+            padding: 10px;
+            border-bottom: 1px solid black;
+            
+        }
+        #username, #password {
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        #forgot-password {
+            align-self: center;
+            justify-self: center;
+        }
+        button {
+            border-radius: 5px;
+            background-color: #73D2DE;
+            border: 1px solid black;
+        }
+
+        .create-account-button {
+            display: grid;
+            grid-template-rows: 50%;
+            grid-row-gap: 10px;
+            margin: 20px 10px 0 10px;
+            justify-content: center;
+        }
+        p {
+            align-self: center;
+            justify-self: center;
+        }
+
+        button:hover {
+            background-color: rgba(115, 210, 222, 0.7);
+        }
+
+        input[type="text"], input[type="password"]{
+            padding-left: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+            <form action="">
+                <div class="title"><b>LOG IN</b></div>
+                <div class="text-fields">
+                    <input type="text" name="" id="username" placeholder="Username">
+                    <input type="password" name="" id="password" placeholder="Password">
+                    <button id="login-button" type="submit">Log in </button>
+                    <a href="#" id="forgot-password">Forgot Password?</a>
+                </div>
+                <div class="create-account-button">
+                    <button id="create-button" type="submit">Create Acccount</button>
+                </div>
+ 
+            </form>
+     
+</body>
+</html>
